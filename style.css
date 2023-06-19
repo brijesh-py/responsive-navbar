@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+*{
+
+    margin: 0;
+    padding: 0px;
+}
+.d-flex{
+    display: flex;
+}
+.jb{
+    justify-content: space-between;
+}
+.jc{
+    justify-content: center;
+}
+.ac{
+    align-items: center;
+}
+nav{
+    padding: 0px 10px;
+}
+nav .nav-brand{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 30px;
+}
+nav a, nav li{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav a{
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 17px
+}
+
+form input[type='submit']{
+    width: 100px;
+}
+i.fa.fa-bars.bars{
+    display: none!important;
+}
+
+@media (max-width:900px) {
+    .d-sm-flex{
+        display: block;
+    }
+    .collapse{
+        padding-bottom: 20px;
+    }
+    .collapse ul{
+        margin-bottom: 10px;
+    }
+    .collapse a{
+        text-align: start;
+    }
+}
+@media (max-width:640px) {
+    i.fa.fa-bars.bars{
+        display: block!important;
+    }
+    .collapse{
+        height: 0px;
+        padding: 0px;
+        overflow: hidden;
+        transition:height 2s ease-in-out;
+    }
+    .collapse.show{
+        transition:height 2s ease-in-out;
+        height: auto;
+        padding-bottom: 10px;
+    
+    }
+    div.collapse div.w3-bar.w3-black a{
+        display: block;
+        width: 100%;
+    }
+    div.w3-dropdown-content a{
+        width: 100%;
+    }
+}

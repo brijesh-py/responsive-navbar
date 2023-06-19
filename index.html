@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWIFTIQ.IN</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="w3-black w3-hover-shadow">
+      <div class="container d-flex jb ac d-sm-flex">
+        <div class="d-flex jb ac">
+          <a href="" class="nav-brand">SWIFTIQ</a>
+          <i class="fa fa-bars bars w3-button"></i>
+        </div>
+        <div class="collapse d-flex ac d-sm-flex">
+          <div class="w3-bar w3-black">
+            <a href="#" class="w3-bar-item w3-button">Home</a>
+            <div class="w3-dropdown-hover">
+              <button class="w3-button">Category</button>
+              <div class="w3-dropdown-content w3-bar-block w3-card-4 w3-black">
+                <a href="#" class="w3-bar-item w3-button">HTML</a>
+                <a href="#" class="w3-bar-item w3-button">CSS</a>
+                <a href="#" class="w3-bar-item w3-button">JavaScript</a>
+                <a href="#" class="w3-bar-item w3-button">JQuery</a>
+                <a href="#" class="w3-bar-item w3-button">Python</a>
+                <a href="#" class="w3-bar-item w3-button">Flask</a>
+                <a href="#" class="w3-bar-item w3-button">DJango</a>
+                <a href="#" class="w3-bar-item w3-button">SQL</a>
+              </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button">Featured</a>
+            <a href="#" class="w3-bar-item w3-button">About</a>
+            <a href="#" class="w3-bar-item w3-button">Contact Us</a>
+          </div>
+          <form action="" class="d-flex w3-margin-left">
+            <input type="text" class="w3-input" placeholder="Search" />
+            <input type="submit" class="w3-button w3-green" value="Search" />
+          </form>
+        </div>
+      </div>
+    </nav>
+    <script>
+        let bars = document.querySelector(".bars");
+        bars.addEventListener("click",() => {
+            let collapse = document.querySelector(".collapse");
+            collapse.classList.toggle("show");
+        })
+    </script>
+  </body>
+</html>
